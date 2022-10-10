@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=PT+Sans&family=Poppins:wght@200&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    jost:"'Jost', sans-serif",
+                    poppins : "'Poppins', sans-serif",
+                    ptsans : "'PT Sans', sans-serif",
+                    raleway : "'Raleway', sans-serif"
+                },
+                colors: {
+                  'biru' : 'rgba(119, 151, 146, 1)',
+                  'birutua' :'rgba(71, 91, 116, 1)',
+                  'abumuda' : 'rgba(238, 238, 238, 1)',
+                  'hijau' : 'rgba(104, 159, 56, 1)',
+                  'hijau2' : 'rgba(104, 159, 56, 1)',
+                  'hitam' : 'rgba(41, 37, 37, 1)',
+                  'bgproduk' : 'rgba(228, 237, 221, 1)',
+                  'button' : 'rgba(69, 123, 115, 1)',
+                  'kanan' : 'rgba(200, 213, 203, 1)'
+            }
+          }
+        }
+        }
+      </script>
+    <title>Funiture</title>
+</head>
+<body class="bg-biru">
+    <div class="top flex justify-end items-center bg-hitam font-jost text-white h-14">
+        <h5 class="mx-2">Email  : furniture@gmail.com</h5>
+        <h5 class="mx-2">Phone : (003)8763-5290</h5>
+    </div>
+    <header class="bg-opacity-0 sticky top-0 z-20 hover:bg-opacity-20 w-full font-jost text-white text-xl flex">
+        <div class="w-full mx-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <img class="w-48" src="./image/Group 6.png">
+                </div>
+                <div class="hidden md:flex items-center justify-center font-inter">
+                  <!--navbar-->
+                  <div class="flex items-center">
+                    <a class="mx-3" href="#banner">HOME</a>
+                    <a class="mx-3" href="#about">ABOUT AS</a>
+                    <a class="mx-3" href="#fitured">FURNITURE</a>
+                    <a class="mx-3" href="#footer">CONTACT US</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-3 w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-3 w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+                  </div>                      
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-gray-500 "
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div> 
+            </div>
+            <!--Mobile-->
+            <div class="hidden mobile-menu ">
+                <ul class="font-inter bg-abumuda w-full text-black">
+                    <li class="active"><a href="#banner" class="block text-sm px-2 py-4 hover:bg-biru hover:text-white transition duration-300">HOME</a></li>
+                    <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-biru hover:text-white transition duration-300">ABOUT AS</a></li>
+                    <li><a href="#fitured" class="block text-sm px-2 py-4 hover:bg-biru hover:text-white transition duration-300">FURNITURE</a></li>
+                    <li><a href="#footer" class="block text-sm px-2 py-4 hover:bg-biru hover:text-white transition duration-300">CONTACT US</a></li>
+                    <div class="flex py-2 justify-around">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-1/2 h-10 p-2 hover:bg-biru hover:text-white ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-1/2 h-10 p-2 hover:bg-biru hover:text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                        </svg>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <div id="banner" class="bg-biru flex-wrap md:flex text-right font-jost justify-around pt-16">
+        <div class="flex justify-center">
+            <img class="w-72 md:w-full p-4 " src="./image/sofaatas.png">
+        </div>
+        <div class="flex-wrap text-white m-auto pr-16 ">
+            <h2 class="text-5xl my-5 font-bold md:text-8xl">DECORATE  YOUR<br> HOME WITH US</h2>
+            <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br> the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+            <button class="w-32 text-xl my-4 border-2 p-1 rounded-lg border-white">Lets Start</button>
+        </div>
+    </div>
+    <div id="Why" class="bg-white text-center py-10 font-jost font-semibold">
+        <h2 class="pt-5 text-4xl">Why Choose Us?</h2>
+        <div class="flex-wrap mx-12 md:mx-0 md:flex md:justify-evenly my-10">
+            <div class="bg-white w-80 h-52 my-5 p-5 text-center drop-shadow-xl">
+                <div class="flex justify-center mb-8">
+                    <img class="w-16" src="./image/Group 3.png">
+                </div>
+                <h5 class="text-xl font-semibold" >100% GOOD MATERIAL</h5>
+                <p class="text-sm ">Has a sturdy material and also high and good product quality</p>
+            </div>
+            <div class="bg-white w-80 h-52 my-5 p-5 text-center drop-shadow-xl">
+                <div class="flex justify-center mb-8">
+                    <img class="w-16" src="./image/Group 4.png">
+                </div>
+                <h5 class="text-xl font-semibold">FAST DELIVERY</h5>
+                <p class="text-sm ">extra fast delivery allows buyers to receive the goods ordered on the same day with safe delivery</p>
+            </div>
+            <div class="bg-white w-80 h-52 my-5 p-5 text-center drop-shadow-xl">
+                <div class="flex justify-center mb-8">
+                    <img class="w-16" src="./image/Group 5.png">
+                </div>
+                <h5 class="text-xl font-semibold">AFFORDABLE PRICES</h5>
+                <p class="text-sm ">have price variants with good quality products, although at low prices but good products</p>
+            </div>
+        </div>
+    </div>
+    <div id="fitured" class="bg-white text-center">
+        <h3 class="py-5 text-3xl font-jost font-bold text-biru"> FITURED PRODUCT</h3>
+        <hr class="mx-24 md:mx-96 my-5">
+        <div class="flex-wrap md:flex justify-evenly py-10 bg-bgproduk px-14 lg:px-80">
+            <div class=" w-64 m-5 my-7 md:my-2 font-poppins">
+                <img class="drop-shadow-lg" src="./image/1.jpeg">
+                <div class="tulisan flex justify-between my-4">
+                    <div class="kiri text-left font-semibold">
+                        <h5 class="text-xs">Loream ipsume</h5>
+                        <h3 class="text-lg">a set of chairs</h3>
+                    </div>
+                    <div class="kanan text-right">
+                        <h3 class="text-birutua">$10</h3>
+                        <div class="flex justify-center border-2 border-biru">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600 mx-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+                            <p class="text-white text-sm bg-biru">check out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-64 m-5 my-7 md:my-2 font-poppins">
+                <img class="drop-shadow-lg" src="./image/2.jpeg">
+                <div class="tulisan flex justify-between my-4">
+                    <div class="kiri text-left font-semibold">
+                        <h5 class="text-xs">Loream ipsume</h5>
+                        <h3 class="text-lg">a set of chairs</h3>
+                    </div>
+                    <div class="kanan text-right">
+                        <h3 class="text-birutua">$30</h3>
+                        <div class="flex justify-center border-2 border-biru">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600 mx-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+                            <p class="text-white text-sm bg-biru">check out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-64 m-5 my-7 md:my-2 font-poppins">
+                <img class="drop-shadow-lg" src="./image/3.jpeg">
+                <div class="tulisan flex justify-between my-4">
+                    <div class="kiri text-left font-semibold">
+                        <h5 class="text-xs">Loream ipsume</h5>
+                        <h3 class="text-lg">a set of chairs</h3>
+                    </div>
+                    <div class="kanan text-right">
+                        <h3 class="text-birutua">$25</h3>
+                        <div class="flex justify-center border-2 border-biru">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600 mx-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+                            <p class="text-white text-sm bg-biru">check out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-64 m-5 my-7 md:my-2 font-poppins">
+                <img class="drop-shadow-lg" src="./image/4.jpeg">
+                <div class="tulisan flex justify-between my-4">
+                    <div class="kiri text-left font-semibold">
+                        <h5 class="text-xs">Loream ipsume</h5>
+                        <h3 class="text-lg">a set of chairs</h3>
+                    </div>
+                    <div class="kanan text-right">
+                        <h3 class="text-birutua">$10</h3>
+                        <div class="flex justify-center border-2 border-biru">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600 mx-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+                            <p class="text-white text-sm bg-biru">check out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-64 m-5 my-7 md:my-2 font-poppins">
+                <img class="drop-shadow-lg" src="./image/5.jpeg">
+                <div class="tulisan flex justify-between my-4">
+                    <div class="kiri text-left font-semibold">
+                        <h5 class="text-xs">Loream ipsume</h5>
+                        <h3 class="text-lg">a set of chairs</h3>
+                    </div>
+                    <div class="kanan text-right">
+                        <h3 class="text-birutua">$10</h3>
+                        <div class="flex justify-center border-2 border-biru">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600 mx-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+                            <p class="text-white text-sm bg-biru">check out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-64 m-5 my-7 md:my-2 font-poppins">
+                <img class="drop-shadow-lg" src="./image/6.jpeg">
+                <div class="tulisan flex justify-between my-4">
+                    <div class="kiri text-left font-semibold">
+                        <h5 class="text-xs">Loream ipsume</h5>
+                        <h3 class="text-lg">a set of chairs</h3>
+                    </div>
+                    <div class="kanan text-right">
+                        <h3 class="text-birutua">$10</h3>
+                        <div class="flex justify-center border-2 border-biru">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600 mx-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+                            <p class="text-white text-sm bg-biru">check out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="bg-white">
+        <div class="flex-wrap md:flex py-6 justify-between">
+            <img class="p-10 md:p-4 md:w-1/3" src="./image/Rectangle 20.png">
+            <div class=" m-5 md:w-1/2">
+                <h2 class="text-4xl my-4 font-bold font-ptsans">ABOUT US</h2>
+                <p class="text-lg font-poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+        </div>
+        <div class="flex-wrap md:flex font-ptsans justify-between">
+            <img class="m-7 w-80 md:w-auto md:m-10 md:order-last" src="./image/Rectangle 21.png">
+            <div class="px-5 md:px-10">
+                <h2 class="text-xl w-96 font-semibold my-3">find dream furniture to make your dream home look modern and elegant</h2>
+                <p class="w-72">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+                <button class="bg-button text-white w-28 p-2 my-11 rounded-lg">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div id="bawah" class="bg-white flex-wrap md:flex justify-center py-10">
+        <div class="bg-kanan flex overflow-hidden w-96 md:w-1/3 p-2 md:m-5 ">
+            <div class="tulisan m-auto">
+                <h3 class="text-2xl font-raleway"><span class="font-bold">BATROOM</span>BATROOM DECOR INSPIRASI</h3>
+                <p class="flex">Show all product 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>                      
+                </p>
+            </div>
+            <img class="w-40" src="./image/badroom.png">
+        </div>
+        <div class="bg-abumuda flex overflow-hidden w-96 md:w-1/3 p-2 md:m-5">
+            <div class="tulisan m-auto">
+                <h3 class="text-2xl font-raleway"><span class="font-bold">SOFA</span>COLLECTION</h3>
+                <p class="flex">Show all product 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>                      
+                </p>
+            </div>
+            <img class="w-40" src="./image/sofa.png">
+        </div>
+    </div>
+    <footer id="footer" class="flex justify-between">
+        <div class="text-center">
+            <img src="./image/Group 6.png">
+            <p class="hidden md:flex w-80 mx-5 text-xl">dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy 
+               text ever since the 1500s, when an 
+               unknown printer took</p>
+            <div class="flex m-5">
+                <svg class="mx-3" style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                </svg>
+                <svg class="mx-3" style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                </svg>
+                <svg class="mx-3" style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="flex mx-10 m-auto text-xl">
+            <div class="mx-14 list-none hidden md:flex">
+                <div>
+                    <h4 class="font-ptsans">Menu</h4>
+                    <li class="font-jost">Home</li> 
+                    <li class="font-jost">ABOUT US</li> 
+                    <li class="font-jost">FURNITURE</li> 
+                    <li class="font-jost">CONTAC US</li> 
+                </div>
+            </div>
+            <div class="font-jost font-semibold">
+                <h4>Contac Us</h4>
+                <p>telp : (003)-2985-7354</p>
+                <p>furniture@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const mobile = document.querySelector("div.mobile-menu")
+
+        btn.addEventListener("click", () => {
+            mobile.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
